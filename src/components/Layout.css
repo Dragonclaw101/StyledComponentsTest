@@ -1,0 +1,15 @@
+.pullRight {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .h1 {
+    margin-top: 10px !important;
+    margin-bottom: 20px !important;
+    color: purple !important;
+  }
+
+  .componentsTest {
+    background-color: purple;
+    color: cyan;
+  }
