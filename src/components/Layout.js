@@ -1,8 +1,10 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import { Header, Container, Divider, Icon } from 'semantic-ui-react';
+import React from "react";
+import { Link } from "react-router-dom";
+// [MF]: My VSCode shows this Icon import as not being used.
+// This where ESLint helps in telling you what is not necessary in your codebase.
+import { Header, Container, Divider, Icon } from "semantic-ui-react";
 
-import { pullRight, h1 } from './Layout.css';
+import { pullRight, h1 } from "./Layout.css";
 
 const Layout = ({ children }) => {
   return (
