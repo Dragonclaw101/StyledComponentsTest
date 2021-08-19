@@ -1,7 +1,7 @@
 import React from "react";
 // [MF]: My VSCode shows this Header import as not being used.
 // This where ESLint helps in telling you what is not necessary in your codebase.
-import { Icon, Header } from "semantic-ui-react";
+import { Icon } from "semantic-ui-react";
 
 import Layout from "./Layout";
 
