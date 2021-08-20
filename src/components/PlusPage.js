@@ -1,8 +1,7 @@
-import React from "react";
-import { Header } from "semantic-ui-react";
+import React from 'react'
+import { Header } from 'semantic-ui-react'
 
-import Layout from "./Layout";
-
+import Layout from './Layout'
 
 // [MF]: What makes this page "dynamic"?
 //I forgot to add the Date component, it's there now -[JH]
@@ -18,7 +17,7 @@ const DynamicPage = () => {
       <br></br>
       <p>The current date is:</p> <Date />
     </Layout>
-  );
-};
+  )
+}
 
-export default DynamicPage;
+export default DynamicPage

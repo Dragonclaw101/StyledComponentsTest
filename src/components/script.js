@@ -1,10 +1,10 @@
 function submit() {
-  alert("Hello");
-  return false;
+  alert('Hello')
+  return false
 }
 
-console.log("Hello world");
+console.log('Hello world')
 
-const btn = document.getElementById("testButton");
+const btn = document.getElementById('testButton')
 
-btn.onclick(submit());
+btn.onclick(submit())

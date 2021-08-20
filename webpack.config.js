@@ -1,18 +1,18 @@
-const webpack = require('webpack');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
-const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-const path = require('path');
+const webpack = require('webpack')
+const HtmlWebpackPlugin = require('html-webpack-plugin')
+const MiniCssExtractPlugin = require('mini-css-extract-plugin')
+const path = require('path')
 
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 3000
 
 module.exports = {
   // Webpack configuration goes here
 
   mode: 'development',
-  entry:'./src/index.js',
+  entry: './src/index.js',
 
   output: {
-    filename: 'bundle[hash].js'
+    filename: 'bundle[hash].js',
   },
 
   devtool: 'inline-source-map',
@@ -22,7 +22,7 @@ module.exports = {
       {
         test: /\.(js)$/,
         exclude: /node_modules/,
-        use: ['babel-loader']
+        use: ['babel-loader'],
       },
       {
         test: /\.css$/i,
@@ -31,7 +31,7 @@ module.exports = {
             loader: MiniCssExtractPlugin.loader,
             options: {
               esModule: false,
-            }
+            },
           },
           {
             loader: 'css-loader',
@@ -39,11 +39,11 @@ module.exports = {
               importLoaders: 1,
               modules: true,
               sourceMap: true,
-            }
-          }
-        ]
-      }
-    ]
+            },
+          },
+        ],
+      },
+    ],
   },
   plugins: [
     new HtmlWebpackPlugin({
@@ -55,6 +55,6 @@ module.exports = {
     host: 'localhost',
     port: port,
     historyApiFallback: true,
-    open: true
-  }
-};
+    open: true,
+  },
+}

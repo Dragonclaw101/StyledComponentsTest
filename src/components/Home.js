@@ -1,9 +1,9 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React from 'react'
+import { Link } from 'react-router-dom'
 
-import Layout from "./Layout";
+import Layout from './Layout'
 
-function Home(){
+function Home() {
   return (
     <Layout>
       <p>
@@ -18,7 +18,7 @@ function Home(){
         <Link to="/components">Head to Styled Components Example</Link>
       </p>
     </Layout>
-  );
-};
+  )
+}
 
-export default Home;
+export default Home

@@ -1,10 +1,10 @@
-import React from "react";
-import { Switch, BrowserRouter as Router, Route } from "react-router-dom";
+import React from 'react'
+import { Switch, BrowserRouter as Router, Route } from 'react-router-dom'
 
-import Home from "./Home";
-import PlusPage from "./PlusPage";
-import NotFound from "./NotFound";
-import Components from "./Components";
+import Home from './Home'
+import PlusPage from './PlusPage'
+import NotFound from './NotFound'
+import Components from './Components'
 
 // const App = () => {
 //   return (
@@ -43,7 +43,7 @@ function App() {
         </Switch>
       </div>
     </Router>
-  );
+  )
 }
 
-export default App;
+export default App

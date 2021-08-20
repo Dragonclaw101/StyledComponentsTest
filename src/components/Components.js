@@ -1,10 +1,10 @@
-import React from "react";
+import React from 'react'
 // [MF]: My VSCode shows this Link import as not being used.
 // This where ESLint helps in telling you what is not necessary in your codebase.
-import styled from "styled-components";
+import styled from 'styled-components'
 
-import Layout from "./Layout";
-import { componentsTest } from "./Layout.css";
+import Layout from './Layout'
+import { componentsTest } from './Layout.css'
 
 const StyledButton = styled.button`
   min-width: 200px;
@@ -12,7 +12,7 @@ const StyledButton = styled.button`
   font-size: 18px;
   padding: 7px 10px;
   background: blue;
-`;
+`
 
 const Content = styled.p`
   color: crimson;
@@ -21,7 +21,7 @@ const Content = styled.p`
   margin-right: auto;
   margin-bottom: 10px;
   margin-left: auto;
-`;
+`
 
 const Components = () => {
   return (
@@ -29,7 +29,7 @@ const Components = () => {
       <StyledButton
         type="button"
         onClick={() =>
-          alert("I was clicked! This is a Styled Components button!")
+          alert('I was clicked! This is a Styled Components button!')
         }
       >
         My Styled Button
@@ -47,7 +47,7 @@ const Components = () => {
         </p>
       </div>
     </Layout>
-  );
-};
+  )
+}
 
-export default Components;
+export default Components
