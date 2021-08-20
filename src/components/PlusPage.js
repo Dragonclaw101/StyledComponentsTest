@@ -3,6 +3,12 @@ import { Header } from 'semantic-ui-react'
 
 import Layout from './Layout'
 
+function Date() {
+  var date = new Date()
+
+  return date
+}
+
 // [MF]: What makes this page "dynamic"?
 //I forgot to add the Date component, it's there now -[JH]
 const DynamicPage = () => {

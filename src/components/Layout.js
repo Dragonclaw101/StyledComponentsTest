@@ -1,5 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+
+import PropTypes from 'prop-types'
 // [MF]: My VSCode shows this Icon import as not being used.
 // This where ESLint helps in telling you what is not necessary in your codebase.
 import { Header, Container, Divider } from 'semantic-ui-react'
@@ -21,6 +23,10 @@ const Layout = ({ children }) => {
       </p>
     </Container>
   )
+}
+
+Layout.propTypes = {
+  children: PropTypes.node.isRequired,
 }
 
 export default Layout
