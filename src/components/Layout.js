@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
+//Imported PropTypes to fix error
 import PropTypes from 'prop-types'
 // [MF]: My VSCode shows this Icon import as not being used.
 // This where ESLint helps in telling you what is not necessary in your codebase.
@@ -25,6 +26,7 @@ const Layout = ({ children }) => {
   )
 }
 
+//Required propTypes for the latyout function
 Layout.propTypes = {
   children: PropTypes.node.isRequired,
 }

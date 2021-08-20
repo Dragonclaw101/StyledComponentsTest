@@ -3,12 +3,10 @@ import { Header } from 'semantic-ui-react'
 
 import Layout from './Layout'
 
-function Date() {
-  var date = new Date()
-
-  return date
+//Defined date in function to be called
+function MyDate() {
+  return Date()
 }
-
 // [MF]: What makes this page "dynamic"?
 //I forgot to add the Date component, it's there now -[JH]
 const DynamicPage = () => {
@@ -21,7 +19,7 @@ const DynamicPage = () => {
       </p>
       <br></br>
       <br></br>
-      <p>The current date is:</p> <Date />
+      <p>The current date is:</p> <MyDate />
     </Layout>
   )
 }
